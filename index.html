@@ -26,10 +26,10 @@
     <!-- Navbar  -->
     <nav>
         <div class="container">
-            <h2 class="logo">Crowdly</h2>
+            <h2 class="logo"><i class="uil uil-users-alt"></i> Crowdly</h2>
             <div class="search-bar">
                 <i class="uil uil-search"></i>
-                <input type="search" placeholder="Search for friends and family...">
+                <input type="search" placeholder="Search for friends and family..." id="search">
             </div>
             <div class="create-post">
                 <label class="btn btn-primary" for="create-post">Create</label>
@@ -43,6 +43,8 @@
     <!-- Main Area -->
     <main>
         <div class="container">
+
+            <!-- Left -->
             <div class="left">
                 <a class="profile">
                     <div class="profile-picture">
@@ -55,13 +57,759 @@
                         </p>
                     </div>
                 </a>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i class="uil uil-estate"></i></span>
+                        <h3>Home</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-compass"></i></span>
+                        <h3>Explore</h3>
+                    </a>
+                    <a class="menu-item" id="notifications">
+                        <span><i class="uil uil-bell"><small class="notification-count">15+</small></i></span>
+                        <h3>Notification</h3>
+                        <div class="notifications-popup">
+                            <div class="">
+                                <div class="profile-picture">
+                                    <img src="assets/images/profile-2.jpg" alt="profile-picture">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Kiko Susan</b> accepted your friend request
+                                    <small class="text-muted">32 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="profile-picture">
+                                    <img src="assets/images/profile-3.jpg" alt="profile-picture">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Charlize Theron</b> commented on your post
+                                    <small class="text-muted">2 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="profile-picture">
+                                    <img src="assets/images/profile-4.jpg" alt="profile-picture">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Kerry Washington</b> accepted your friend request
+                                    <small class="text-muted">2 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="profile-picture">
+                                    <img src="assets/images/profile-5.jpg" alt="profile-picture">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Alita Bagon</b> and <b>67 others</b> liked your post
+                                    <small class="text-muted">6 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="profile-picture">
+                                    <img src="assets/images/profile-6.jpg" alt="profile-picture">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Cora Thompson</b> commented on a post you are tagged in
+                                    <small class="text-muted">4 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="profile-picture">
+                                    <img src="assets/images/profile-7.jpg" alt="profile-picture">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Lora Kalito</b> commented on your post
+                                    <small class="text-muted">1 WEEK AGO</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="menu-item" id="message-notifications">
+                        <span><i class="uil uil-envelope-alt"><small class="notification-count">8</small></i></span>
+                        <h3>Message</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-bookmark"></i></span>
+                        <h3>Bookmark</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-chart-line"></i></span>
+                        <h3>Analytics</h3>
+                    </a>
+                    <a class="menu-item" id="theme">
+                        <span><i class="uil uil-palette"></i></span>
+                        <h3>Theme</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-setting"></i></span>
+                        <h3>Settings</h3>
+                    </a>
+                </div>
+
+                <label for="create-post" class="btn btn-primary">Create Post</label>
             </div>
-            <div class="middle"></div>
-            <div class="right"></div>
+
+            <!-- Middle -->
+            <div class="middle">
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="assets/images/profile-1.jpg" alt="">
+                        </div>
+                        <p class="name">Your Story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="assets/images/profile-10.jpg" alt="">
+                        </div>
+                        <p class="name">Fred McCain</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="assets/images/profile-5.jpg" alt="">
+                        </div>
+                        <p class="name">Sara Smith</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="assets/images/profile-12.jpg" alt="">
+                        </div>
+                        <p class="name">Karen Babados</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="assets/images/profile-6.jpg" alt="">
+                        </div>
+                        <p class="name">Rachael Issac</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="assets/images/profile-4.jpg" alt="">
+                        </div>
+                        <p class="name">Monalisa Nitly</p>
+                    </div>
+                </div>
+
+                <!-- Create Post {input} -->
+                <form action="" class="create-post-form">
+                    <div class="profile-picture">
+                        <img src="assets/images/profile-1.jpg" alt="">
+                    </div>
+                    <input type="text" placeholder="What's on your mind, Samantha?" id="create-post">
+                    <label for="create-post" class="btn btn-primary">Post</label>
+                </form>
+
+                <!-- Feeds -->
+                <div class="feeds">
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="assets/images/profile-13.jpg" alt="profile-picture">
+                                </div>
+                                <div class="info">
+                                    <h3>Taylor Chen</h3>
+                                    <small>Shanghai, 15 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="assets/images/feed-1.jpg" alt="feed-1">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-alt-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="assets/images/profile-10.jpg" alt=""></span>
+                            <span><img src="assets/images/profile-4.jpg" alt=""></span>
+                            <span><img src="assets/images/profile-15.jpg" alt=""></span>
+                            <p>Liked by <b>Debra Tarkowski</b> and <b>725 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Taylor Chen</b> Pariatur mollit ad incididunt elit do anim ad consectetur deserunt
+                                sunt culpa
+                                id exercitation. <span class="harsh-tag">#travel #fashion</span></p>
+                        </div>
+                        <div class="comments text-muted">
+                            View all 303 comments
+                        </div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="assets/images/profile-14.jpg" alt="profile-picture">
+                                </div>
+                                <div class="info">
+                                    <h3>Adrian George</h3>
+                                    <small>Sofia, 23 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="assets/images/feed-2.jpg" alt="feed-1">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-alt-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="assets/images/profile-10.jpg" alt=""></span>
+                            <span><img src="assets/images/profile-4.jpg" alt=""></span>
+                            <span><img src="assets/images/profile-15.jpg" alt=""></span>
+                            <p>Liked by <b>Samantha Doe</b> and <b>125 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Adrian George</b> Pariatur mollit ad incididunt elit do anim ad consectetur deserunt
+                                sunt culpa
+                                id exercitation. <span class="harsh-tag">#travel #fashion</span></p>
+                        </div>
+                        <div class="comments text-muted">
+                            View all 303 comments
+                        </div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="assets/images/profile-16.jpg" alt="profile-picture">
+                                </div>
+                                <div class="info">
+                                    <h3>Sonia Adora</h3>
+                                    <small>Bueno Aires, 1 HOUR AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="assets/images/feed-3.jpg" alt="feed-3">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-alt-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="assets/images/profile-10.jpg" alt=""></span>
+                            <span><img src="assets/images/profile-4.jpg" alt=""></span>
+                            <span><img src="assets/images/profile-15.jpg" alt=""></span>
+                            <p>Liked by <b>Adrian George</b> and <b>58 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Sonia Adora</b> Pariatur mollit ad incididunt elit do anim ad consectetur deserunt
+                                sunt culpa
+                                id exercitation. <span class="harsh-tag">#travel #fashion</span></p>
+                        </div>
+                        <div class="comments text-muted">
+                            View all 303 comments
+                        </div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="assets/images/profile-17.jpg" alt="profile-picture">
+                                </div>
+                                <div class="info">
+                                    <h3>Lilla Smith</h3>
+                                    <small>Las Vegas, 4 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="assets/images/feed-4.jpg" alt="feed-1">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-alt-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="assets/images/profile-10.jpg" alt=""></span>
+                            <span><img src="assets/images/profile-4.jpg" alt=""></span>
+                            <span><img src="assets/images/profile-15.jpg" alt=""></span>
+                            <p>Liked by <b>Taylor Chen</b> and <b>221 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Lilla Smith</b> Pariatur mollit ad incididunt elit do anim ad consectetur deserunt
+                                sunt culpa
+                                id exercitation. <span class="harsh-tag">#travel #fashion</span></p>
+                        </div>
+                        <div class="comments text-muted">
+                            View all 71 comments
+                        </div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="assets/images/profile-18.jpg" alt="profile-picture">
+                                </div>
+                                <div class="info">
+                                    <h3>Martins Blake</h3>
+                                    <small>Nairobi, 15 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="assets/images/feed-5.jpg" alt="feed-1">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-alt-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="assets/images/profile-10.jpg" alt=""></span>
+                            <span><img src="assets/images/profile-4.jpg" alt=""></span>
+                            <span><img src="assets/images/profile-15.jpg" alt=""></span>
+                            <p>Liked by <b>Ricardo Freddo</b> and <b>300 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Martins Blake</b> Pariatur mollit ad incididunt elit do anim ad consectetur deserunt
+                                sunt culpa
+                                id exercitation. <span class="harsh-tag">#travel #fashion</span></p>
+                        </div>
+                        <div class="comments text-muted">
+                            View all 22 comments
+                        </div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="assets/images/profile-2.jpg" alt="profile-picture">
+                                </div>
+                                <div class="info">
+                                    <h3>Taylor Chen</h3>
+                                    <small>Beijing, 23 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="assets/images/feed-4.jpg" alt="feed-1">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-alt-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="assets/images/profile-10.jpg" alt=""></span>
+                            <span><img src="assets/images/profile-4.jpg" alt=""></span>
+                            <span><img src="assets/images/profile-15.jpg" alt=""></span>
+                            <p>Liked by <b>Adrian George</b> and <b>125 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Taylor Chen</b> Pariatur mollit ad incididunt elit do anim ad consectetur deserunt
+                                sunt culpa
+                                id exercitation. <span class="harsh-tag">#travel #fashion</span></p>
+                        </div>
+                        <div class="comments text-muted">
+                            View all 69 comments
+                        </div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="assets/images/profile-17.jpg" alt="profile-picture">
+                                </div>
+                                <div class="info">
+                                    <h3>Elizabeth O'Connor</h3>
+                                    <small>Celtic, 1 DAY AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="assets/images/feed-7.jpg" alt="feed-1">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-alt-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="assets/images/profile-10.jpg" alt=""></span>
+                            <span><img src="assets/images/profile-4.jpg" alt=""></span>
+                            <span><img src="assets/images/profile-15.jpg" alt=""></span>
+                            <p>Liked by <b>Ella Macron</b> and <b>789 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Elizabeth O'Connor</b> Pariatur mollit ad incididunt elit do anim ad consectetur
+                                deserunt
+                                sunt culpa
+                                id exercitation. <span class="harsh-tag">#travel #fashion</span></p>
+                        </div>
+                        <div class="comments text-muted">
+                            View all 111 comments
+                        </div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="assets/images/profile-19.jpg" alt="profile-picture">
+                                </div>
+                                <div class="info">
+                                    <h3>Khadija Amadou</h3>
+                                    <small>Istanbul, 5 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="assets/images/feed-4.jpg" alt="feed-1">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-alt-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="assets/images/profile-10.jpg" alt=""></span>
+                            <span><img src="assets/images/profile-4.jpg" alt=""></span>
+                            <span><img src="assets/images/profile-15.jpg" alt=""></span>
+                            <p>Liked by <b>Ella Summers</b> and <b>235 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Khadija Amadou</b> Pariatur mollit ad incididunt elit do anim ad consectetur deserunt
+                                sunt culpa
+                                id exercitation. <span class="harsh-tag">#travel #fashion</span></p>
+                        </div>
+                        <div class="comments text-muted">
+                            View all 1045 comments
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Messages</h4><i class="uil uil-edit-alt"></i>
+                    </div>
+                    <div class="search-bar">
+                        <i class="uil uil-search"></i>
+                        <input type="search" placeholder="Search Messages" id="search-messages">
+                    </div>
+
+                    <div class="category">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="message-requests">Requests(23)</h6>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="assets/images/profile-10.jpg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Noami Osaka</h5>
+                            <p class="text-bold">The sunset is so beautiful.. wow!</p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="assets/images/profile-11.jpg" alt="">
+                        </div>
+                        <div class="message-body">
+                            <h5>Lewis Hamilton</h5>
+                            <p class="text-muted">You wanna know what would...</p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="assets/images/profile-3.jpg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Rhoda Anderson</h5>
+                            <p class="text-bold">4 new messages</p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="assets/images/profile-13.jpg" alt="">
+                        </div>
+                        <div class="message-body">
+                            <h5>Taylor Chen</h5>
+                            <p class="text-muted">Chloe's birthday is today!</p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="assets/images/profile-18.jpg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Martins Blake</h5>
+                            <p class="text-bold">12 new messages</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="friend-requests">
+                    <h4>Requests</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture">
+                                <img src="assets/images/profile-2.jpg" alt="">
+                            </div>
+                            <div class="">
+                                <h5>Nathaniel Neom</h5>
+                                <p class="text-muted">
+                                    12 mutual friends
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="action">
+                            <a class="btn btn-primary">
+                                Accept
+                            </a>
+                            <a class="btn">
+                                Decline
+                            </a>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture">
+                                <img src="assets/images/profile-4.jpg" alt="">
+                            </div>
+                            <div class="">
+                                <h5>Ruth Racca</h5>
+                                <p class="text-muted">
+                                    9 mutual friends
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="action">
+                            <a class="btn btn-primary">
+                                Accept
+                            </a>
+                            <a class="btn">
+                                Decline
+                            </a>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture">
+                                <img src="assets/images/profile-6.jpg" alt="">
+                            </div>
+                            <div class="">
+                                <h5>Anna White</h5>
+                                <p class="text-muted">
+                                    32 mutual friends
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="action">
+                            <a class="btn btn-primary">
+                                Accept
+                            </a>
+                            <a class="btn">
+                                Decline
+                            </a>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture">
+                                <img src="assets/images/profile-15.jpg" alt="">
+                            </div>
+                            <div class="">
+                                <h5>Jude Law</h5>
+                                <p class="text-muted">
+                                    15 mutual friends
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="action">
+                            <a class="btn btn-primary">
+                                Accept
+                            </a>
+                            <a class="btn">
+                                Decline
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
-    <script src="assets/js/scripts.js"></script>
+    <!-- Theme Customization -->
+    <div class="theme">
+        <div class="card">
+            <h2>Pick a theme</h2>
+            <p>Choose your color scheme, font size and background.</p>
+
+            <div class="font-size">
+                <h4>Font Size</h4>
+                <div class="">
+                    <h6>Aa</h6>
+                    <div class="choose-size">
+                        <span class="font-size-1 active"></span>
+                        <span class="font-size-2"></span>
+                        <span class="font-size-3"></span>
+                        <span class="font-size-4"></span>
+                        <span class="font-size-5"></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+
+            <div class="color-scheme">
+                <h4>Color Scheme</h4>
+                <div class="choose-color-scheme">
+                    <span class="color-1 active"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+
+            <div class="background">
+                <h4>Background</h4>
+                <div class="choose-bg">
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5 for="bg-1">Light</h5>
+                    </div>
+                    <div class="bg-2">
+                        <span></span>
+                        <h5 for="bg-1">Dim</h5>
+                    </div>
+                    <div class="bg-3">
+                        <span></span>
+                        <h5 for="bg-3">Dark</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
